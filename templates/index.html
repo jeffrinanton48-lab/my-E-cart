@@ -36,50 +36,45 @@
         </section>
 
         <section class="products">
-            <h2>Featured Products</h2>
+    <h2>Featured Products</h2>
 
-            <div class="product-container">
+    <div class="product-container">
 
-                <div class="product-image">
-    <img src="{{ url_for('static', filename='images/mobile.jpg') }}" alt="Smartphone">
-</div>
-                    <h3>Smartphone</h3>
-                    <p>₹19,999</p>
-                    <button>Add to Cart</button>
-                </div>
-
-                <div class="product-image">
-    <img src="{{ url_for('static', filename='images/laptop.jpg') }}" alt="Laptop">
-</div>
-                    <h3>Laptop</h3>
-                    <p>₹49,999</p>
-                    <button>Add to Cart</button>
-                </div>
-
-                <div class="product-image">
-    <img src="{{ url_for('static', filename='images/headphones.jpg') }}" alt="Headphones">
-</div>
-                    <h3>Headphones</h3>
-                    <p>₹2,499</p>
-                    <button>Add to Cart</button>
-                </div>
-
-                <div class="product-image">
-    <img src="{{ url_for('static', filename='images/watch.jpg') }}" alt="Smart Watch">
-</div>
-                    <h3>Smart Watch</h3>
-                    <p>₹3,999</p>
-                    <button>Add to Cart</button>
-                </div>
-
+        <div class="product-card">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/mobile.jpg') }}" alt="Smartphone">
             </div>
-        </section>
+            <h3>Smartphone</h3>
+            <p>₹19,999</p>
+            <button>Add to Cart</button>
+        </div>
 
-    </main>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/laptop.jpg') }}" alt="Laptop">
+            </div>
+            <h3>Laptop</h3>
+            <p>₹49,999</p>
+            <button>Add to Cart</button>
+        </div>
 
-    <footer>
-        <p>© 2026 CartNova. All rights reserved.</p>
-    </footer>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/headphones.jpg') }}" alt="Headphones">
+            </div>
+            <h3>Headphones</h3>
+            <p>₹2,499</p>
+            <button>Add to Cart</button>
+        </div>
 
-</body>
-</html>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='images/watch.jpg') }}" alt="Smart Watch">
+            </div>
+            <h3>Smart Watch</h3>
+            <p>₹3,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
