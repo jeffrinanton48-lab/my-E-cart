@@ -16,7 +16,7 @@ body {
 
 
 header {
-    background-color: #2874f0;
+    background-color: #000000;
     color: white;
     padding: 15px 5%;
     display: flex;
@@ -42,7 +42,7 @@ header button {
     border: none;
     border-radius: 4px;
     background-color: white;
-    color: #2874f0;
+    color: #000000;
     font-weight: bold;
     cursor: pointer;
 }
@@ -69,7 +69,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #2874f0;
+    color: #000000;
 }
 
 
@@ -98,7 +98,7 @@ nav a:hover {
     border: none;
     border-radius: 5px;
     background-color: white;
-    color: #2874f0;
+    color: #000000;
     font-weight: bold;
     cursor: pointer;
 }
@@ -148,7 +148,7 @@ nav a:hover {
 }
 
 .product-card button {
-    background-color: #2874f0;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -157,7 +157,7 @@ nav a:hover {
 }
 
 .product-card button:hover {
-    background-color: #1255c5;
+    background-color: #000000;
 }
 
 /* FOOTER */
