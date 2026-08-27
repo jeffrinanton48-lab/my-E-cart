@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartNova - Cart</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>CartNova</h1>
+
+        <a href="/">
+            <button>← Continue Shopping</button>
+        </a>
+    </header>
+
+    <main>
+
+        <section class="products">
+
+            <h2>Your Cart 🛒</h2>
+
+            {% if cart %}
+
+                {% for product in cart %}
+
+                   <div class="product-card">
+    <h3>{{ product.name }}</h3>
+    <p>₹{{ product.price }}</p>
+
+    <a href="{{ url_for('remove_from_cart', product=product.name) }}">
+        <button>Remove</button>
+    </a>
+</div>
+
+                {% endfor %}
+
+                <div class="cart-total">
+                    <h2>Total: ₹{{ total }}</h2>
+                </div>
+
+            {% else %}
+
+                <p>Your cart is empty.</p>
+
+            {% endif %}
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CartNova. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
